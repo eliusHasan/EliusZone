@@ -1,45 +1,65 @@
 import React from "react";
 import styles from "../css/Contact.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHouse,
+  faPhone,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
     <section className={styles.contactSection} id="contact">
       <h2 className={styles.contactTitle}>Contact Me</h2>
       <p className={styles.contactDescription}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        dignissimos eaque doloremque, nulla mollitia facilis temporibus ullam
-        voluptas nostrum consequatur? Fugiat vitae sint quo est eveniet
-        perspiciatis eum asperiores ipsam.
+        Feel free to reach out for collaborations, questions, or just to say
+        hello. I'm always open to new opportunities and connections.
       </p>
 
       <div className={styles.contactContainer}>
         {/* Contact Info */}
         <div className={styles.contactInfo}>
-          <div className={styles.infoBox}>
-            <span className={styles.icon}>📍</span>
-            <div>
-              <h4 className={styles.infoTitle}>Address</h4>
-              <p>
-                4871 Sugar Camp Road,
-                <br />
-                Owatonna, Minnesota, 55060
-              </p>
+          <div>
+            <div className={styles.infoBox}>
+              <span className={styles.icon}>
+                <FontAwesomeIcon
+                  icon={faHouse}
+                  title="Address"
+                  className={styles.iconStyle}
+                />
+              </span>
+              <div>
+                <h4 className={styles.infoTitle}>Address</h4>
+                <p>Ajampur, Uttara, Dhaka</p>
+              </div>
             </div>
-          </div>
 
-          <div className={styles.infoBox}>
-            <span className={styles.icon}>📞</span>
-            <div>
-              <h4 className={styles.infoTitle}>Phone</h4>
-              <p>561-456-2321</p>
+            <div className={styles.infoBox}>
+              <span className={styles.icon}>
+                <FontAwesomeIcon
+                  icon={faPhone}
+                  title="Phone"
+                  className={styles.iconStyle}
+                />
+              </span>
+              <div>
+                <h4 className={styles.infoTitle}>Phone</h4>
+                <p>01737982792</p>
+              </div>
             </div>
-          </div>
 
-          <div className={styles.infoBox}>
-            <span className={styles.icon}>✉️</span>
-            <div>
-              <h4 className={styles.infoTitle}>Email</h4>
-              <p>example@email.com</p>
+            <div className={styles.infoBox}>
+              <span className={styles.icon}>
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  title="Email"
+                  className={styles.iconStyle}
+                />
+              </span>
+              <div>
+                <h4 className={styles.infoTitle}>Email</h4>
+                <p>elius24hasan@gmail.com</p>
+              </div>
             </div>
           </div>
         </div>

@@ -13,6 +13,7 @@
 
 .contactDescription {
   max-width: 700px;
+  text-align: justify;
   margin: 0 auto 40px auto;
   line-height: 1.6;
   font-size: 1rem;
@@ -24,15 +25,14 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
+  padding: 0 50px;
 }
 
 .contactInfo {
-  flex: 1;
-  min-width: 250px;
-  max-width: 400px;
+  width: 25%;
   display: flex;
-  /* align-items: center; */
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 20px;
 }
@@ -40,22 +40,33 @@
 .infoBox {
   display: flex;
   align-items: flex-start;
-  gap: 15px;
+  gap: 25px;
+  margin-bottom: 20px;
+  text-align: start;
 }
 
 .icon {
   font-size: 1.8rem;
 }
 
+.iconStyle {
+  color: #e91e63;
+}
+
 .infoTitle {
   font-size: 1.2rem;
+  color: white;
   margin-bottom: 5px;
 }
 
+.followbtn {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
 .contactForm {
-  flex: 1;
-  min-width: 280px;
-  max-width: 500px;
+  width: 45%;
   background-color: white;
   color: black;
   padding: 30px;
@@ -72,8 +83,8 @@
 .input,
 .textarea {
   width: 100%;
-  padding: 12px 15px;
-  margin-bottom: 15px;
+  padding: 7px 12px;
+  margin-bottom: 5px;
   border: none;
   border-bottom: 2px solid #ddd;
   background: transparent;
@@ -105,4 +116,59 @@
 
 .sendButton:hover {
   background-color: #0097a7;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 1024px) {
+  .contactInfo {
+    width: 40%;
+  }
+
+  .contactForm {
+    width: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .contactInfo,
+  .contactForm {
+    width: 100%;
+  }
+
+  .contactTitle {
+    font-size: 2rem;
+  }
+
+  .formTitle {
+    font-size: 1.3rem;
+  }
+
+  .infoTitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactTitle {
+    font-size: 1.7rem;
+  }
+
+  .contactDescription {
+    font-size: 0.95rem;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  .sendButton {
+    font-size: 0.95rem;
+    padding: 10px 16px;
+  }
 }

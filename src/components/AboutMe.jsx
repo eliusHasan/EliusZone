@@ -1,5 +1,5 @@
 import styles from "../css/AboutMe.module.css";
-import profileImg from "../assets/img/profile.jpg";
+import profileImg from "../assets/img/about.JPG";
 import Button from "./Button";
 
 export default function About() {
