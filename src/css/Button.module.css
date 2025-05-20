@@ -1,0 +1,13 @@
+.cvButton {
+  background-color: #e91e63;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cvButton:hover {
+  background-color: #c2185b;
+}

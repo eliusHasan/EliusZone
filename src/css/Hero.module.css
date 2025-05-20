@@ -1,0 +1,89 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1eded;
+  align-items: center;
+  padding: 50px 10%;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ddd;
+}
+.left {
+  max-width: 50%;
+}
+.left h1 {
+  font-size: 48px;
+  color: #e91e63;
+  margin: 0;
+}
+.left h2 {
+  font-size: 24px;
+}
+.left p {
+  margin: 20px 0;
+  font-size: 16px;
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.sayHello,
+.sayHello a {
+  background-color: #e91e63;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.sayHello a {
+  text-decoration: none;
+}
+.myWorks {
+  align-self: center;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.right img {
+  max-width: 400px;
+  border-radius: 20px;
+}
+@media (max-width: 1000px) {
+  .right img {
+    max-width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 20px;
+  }
+  .left {
+    max-width: 100%;
+  }
+  .left h1,
+  h2,
+  h3,
+  p {
+    text-align: center;
+  }
+  .buttons {
+    justify-content: center;
+  }
+  .right {
+    display: none;
+  }
+  /* .right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .right img {
+    max-width: 100%;
+  } */
+}
