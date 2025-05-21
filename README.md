@@ -2,6 +2,7 @@
 
 This is my personal portfolio website built using **React**, **Vite**, **CSS Modules**, and **Font Awesome**. It includes sections like Home,Projects, About Me, and Contact, and is fully responsive and easy to navigate.
 
+## 🔗 Live Demo
 
 ## 🔍 Sections
 
@@ -31,4 +32,21 @@ This is my personal portfolio website built using **React**, **Vite**, **CSS Mod
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/eliusHasan/EliusZone.git
+   cd EliusZone
+   npm install
+   npm run dev
+   ```
+## 📁 Folder Structure
+├── public/
+│ └── cv.pdf
+├── src/
+│ ├── assets/
+│ ├── components/
+│ ├── css/
+│ ├── App.jsx
+│ └── main.jsx
+├── index.html
+├── package.json
+├── README.md
+
