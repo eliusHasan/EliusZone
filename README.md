@@ -37,16 +37,5 @@ This is my personal portfolio website built using **React**, **Vite**, **CSS Mod
    npm install
    npm run dev
    ```
-## 📁 Folder Structure
-├── public/
-│ └── cv.pdf
-├── src/
-│ ├── assets/
-│ ├── components/
-│ ├── css/
-│ ├── App.jsx
-│ └── main.jsx
-├── index.html
-├── package.json
-├── README.md
+
 
